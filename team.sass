@@ -1,0 +1,59 @@
+.team
+    padding: 120px 0
+    color: #212121
+    &__row
+        display: flex
+        flex-flow: row wrap
+        margin: 125px -15px 0
+    &__elem
+        padding: 0 15px
+        flex: 0 1 33.333%
+        justify-content: space-between
+        display: flex            
+    &__item 
+        display: flex
+        flex-flow: column nowrap
+        align-items: center
+        flex: 1 1 auto
+    &__image
+        margin-bottom: 38px
+        width: 350px
+        height: 350px
+    &__contain
+        position: relative
+        padding: 43.1%
+        img
+            top: 0
+            left: 0
+            position: absolute
+            width: 100%
+            height: 100%
+            object-fit: cover  
+    &__label 
+        line-height: 22px
+        letter-spacing: 1px
+        margin-bottom: 15px
+    &__sublabel 
+        font-size: 15px
+        line-height: 22px
+        letter-spacing: 0.75px
+        margin-bottom: 30px
+    &__social-row
+        align-self: stretch
+        display: flex
+        flex-flow: row nowrap
+        justify-content: center
+    &__sign      
+        margin: 0 15px
+        border-radius: 10px
+        text-align: center  
+        background-color: #f0f1f1
+        padding: 7px
+        width: 50px
+        height: 50px
+        overflow: hidden
+        img
+            width: 100%
+            height: 100%
+            object-fit: contain
+    &__slideDot

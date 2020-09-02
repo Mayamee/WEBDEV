@@ -1,0 +1,38 @@
+.about
+    padding: 120px 0
+    font-size: 15px
+    font-weight: 400
+    color: #212121
+    text-align: center
+    &__row 
+        margin-top: 125px
+        display: flex
+        justify-content: space-between
+        // flex-wrap: wrap
+    &__elem 
+        flex: 0 0 33.3333%
+        display: flex
+        flex-flow: column
+        align-items: center
+    &__image
+        width: 57px
+        height: 57px
+        margin-bottom: 40px
+    &__contain
+        position: relative
+        padding-top: 100%
+        img
+            top: 0
+            left: 0
+            position: absolute
+            height: 100%
+            width: 100%
+            object-fit: cover
+    &__row-title 
+        margin-bottom: 25px
+        font-size: 20px
+        line-height: 22px
+        letter-spacing: 1px
+    &__row-subtitle
+        line-height: 22px
+        letter-spacing: 0.75px

@@ -1,0 +1,69 @@
+.services 
+    font-weight: 400
+    background-color: #e4fdf9
+    padding: 100px 0 100px 0
+    &__row 
+        display: flex
+        flex-flow: row wrap
+        margin: 110px -15px 0
+    &__item
+        padding: 0 15px
+        flex: 0 1 33.333%
+        margin-bottom: 30px
+    &__elem
+        color: #212121
+        padding: 50px 0
+        background-color: #fff
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-items: center
+        transition: background-color 1s ease
+        &:hover
+            background-color: #00897b
+            color: #ffffff
+            .services__btn
+                border: 2px solid #fff
+            .services__image
+                img
+                    &:nth-child(1)
+                        display: none
+                    &:nth-child(2)
+                        display: inline
+    &__image 
+        margin-bottom: 40px
+        width: 50px
+        height: 50px
+    &__contain
+        position: relative
+        padding-top: 114%
+        img
+            top: 0
+            left: 0
+            position: absolute
+            height: 100%
+            width: 100%
+            object-fit: cover
+            &:nth-child(1)
+                display: inline
+            &:nth-child(2)
+                display: none
+    &__row-title 
+        font-size: 20px
+        line-height: 22px
+        letter-spacing: 1px
+        margin-bottom: 30px
+    &__row-subtitle 
+        font-size: 15px
+        line-height: 25px
+        letter-spacing: 0.75px
+        margin-bottom: 30px
+    &__btn
+        padding: 0 15px
+        line-height: 55px
+        text-transform: uppercase
+        letter-spacing: 1px
+        font-size: 20px
+        height: 55px
+        align-self: center
+        border: 2px solid #000

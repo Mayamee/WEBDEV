@@ -1,0 +1,39 @@
+@import nullstyle
+// mixins
+@mixin cont ($w)
+    margin: 0 auto
+    max-width: #{$w}px
+// patterns
+%border
+    border: 1px solid red
+body
+    font-family: "Open Sans",sans-serif
+    font-size: 20px
+    font-weight: 400
+._title 
+    color: #212121
+    font-size: 30px
+    font-weight: 700
+    line-height: 22px
+    letter-spacing: 1.5px
+    margin-bottom: 30px
+    text-align: center
+._subtitle 
+    color: #212121
+    font-size: 15px
+    text-align: center
+    line-height: 22px
+    letter-spacing: 0.75px
+.container
+    @include cont (1170)
+@import header
+@import title
+@import about
+@import services
+@import works
+@import price
+@import team
+@import blog
+@import contact
+@import footer
+@import media

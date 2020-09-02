@@ -1,0 +1,81 @@
+.blog
+    padding: 120px 0
+    background-color: #e4fdf9
+    color: #212121
+    &__row
+        margin: 110px 0
+    &__elem
+        display: flex
+        justify-content: space-between
+        flex-flow: row
+        margin: 0 -15px 5px
+        &:hover
+            .blog__body-title
+                color: #00897b
+    &__elem
+        &:nth-child(even)
+            & > .blog
+                &__image
+                    order: 1
+                &__body
+                    order: 0
+    &__image
+        flex: 0 0 585px
+        overflow: hidden
+        padding: 0 15px
+        img
+            max-width: 100%
+            max-height: 100%
+            object-fit: cover
+    &__body
+        padding: 60px 15px 0
+        flex: 1 1 auto
+    &__body-title
+        font-size: 25px
+        line-height: 22px
+        letter-spacing: 1.25px
+        transition: all 0.3s ease
+        margin-bottom: 26px
+    &__info
+        margin-bottom: 32px
+        display: flex
+        align-items: center
+        & > *
+            padding: 0 35px
+            position: relative
+            &::before
+                content: ""
+                width: 17px
+                height: 18px
+                position: absolute
+                top: 2px
+                left: 0
+    &__date 
+        font-size: 17px
+        line-height: 22px
+        letter-spacing: 0.85px
+        &::before
+            background: url("/img/blog_icon-2.png") 0 0 / contain no-repeat
+    &__table
+        font-size: 17px
+        line-height: 22px
+        letter-spacing: 0.85px
+        &::before
+            background: url("/img/blog_icon-1.png") 0 0 / contain no-repeat
+    &__text 
+        font-size: 15px
+        line-height: 22px
+        letter-spacing: 0.75px
+    &__button
+        display: flex
+        justify-content: center
+        align-items: center
+        button
+            padding: 0 60px
+            line-height: 70px
+            text-transform: uppercase
+            letter-spacing: 1px
+            font-size: 20px
+            height: 70px
+            background-color: #00897b
+            color: #ffffff

@@ -1,0 +1,84 @@
+.nav 
+  max-width: 700px
+  margin: 0 auto
+  &__row 
+    display: flex
+    justify-content: space-between
+  &__elem 
+    line-height: 55px
+    height: 55px
+    text-transform: uppercase
+    letter-spacing: 1px
+    border: 2px solid #00897b
+    padding: 0 25px
+    transition: all 0.6s ease
+    &:hover
+      background-color: #00897b
+      color: #fff
+.works 
+  padding: 120px 0
+  &__nav
+    margin-top: 110px
+  &__row
+    display: flex
+    justify-content: space-between
+    flex-flow: row wrap
+    margin: 110px -15px 0
+  &__elem
+    flex: 0 1 33.3333%
+    padding: 0 15px
+    margin-bottom: 30px
+  &__item 
+    position: relative
+    &:hover
+      .over
+        color: #ffffff
+        background-color: #484848b7
+  &__image
+    height: 370px
+  &__contain
+    position: relative
+    padding: 49.9%
+    img
+      top: 0
+      left: 0
+      position: absolute
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__over
+    transition: all 0.5s ease
+  &__button
+    margin-top: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+    button
+      padding: 0 60px
+      line-height: 70px
+      text-transform: uppercase
+      letter-spacing: 1px
+      font-size: 20px
+      height: 70px
+      background-color: #00897b
+      color: #ffffff
+.over 
+  color: transparent
+  background-color: transparent
+  text-align: center
+  flex-flow: column nowrap
+  justify-content: center
+  align-items: center
+  display: flex
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  &__title 
+    line-height: 22px
+    letter-spacing: 1px
+  &__subtitle
+    font-size: 15px
+    line-height: 22px
+    letter-spacing: 0.75px

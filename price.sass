@@ -1,0 +1,92 @@
+.price
+    padding: 120px 0
+    background-color: #f0f0f0
+    color: #212121
+    &__row  
+        display: flex
+        flex-flow: row wrap
+        margin: 125px -15px 0
+    &__elem 
+        text-align: center
+        padding: 0 15px
+        flex: 0 1 33.333%
+        display: flex
+    &__item
+        overflow: hidden
+        background-color: #fff
+        padding: 50px 0 60px
+        display: flex
+        flex-flow: column nowrap
+        align-items: center
+        flex: 1 1 auto
+        transition: all 0.1s ease-in
+        position: relative
+        z-index: 0
+        &::before
+            position: absolute
+            content: ""
+            top: -250px
+            left: 0
+            right: 0
+            bottom: 0
+            background: url("/img/price_img.jpg") no-repeat
+            z-index: -1
+            transition: all 0.8s ease
+        &:hover
+            transform: scale(1.03)
+            box-shadow: 0 3px 25px rgba(0, 0, 0, 0.35)
+            color: #fff
+            &::before
+                top: 0
+            .price__btn
+                background-color: #00897b
+                color: #fff
+                transition: all 0.1s ease
+                border: none
+    &__sublabel 
+        font-size: 25px
+        line-height: 22px
+        letter-spacing: 1.25px
+        margin-bottom: 40px
+    &__label 
+        margin-bottom: 70px
+    &__text 
+        font-size: 50px
+        line-height: 22px
+        letter-spacing: 2.5px
+        position: relative
+        &::before
+            content: "$"
+            font-size: 25px
+            position: absolute
+            height: 22px
+            width: 12px
+            top: 5px
+            left: -20px
+    &__freq 
+        font-size: 17px
+        line-height: 22px
+        letter-spacing: 0.85px
+    &__list 
+        flex: 1 1 auto
+        color: #212121
+        li
+            position: relative
+            margin-bottom: 35px
+            font-size: 17px
+            font-weight: 300
+            line-height: 22px
+            letter-spacing: 0.85px
+            border-bottom: 1px solid #0000008e
+    &__btn 
+        color: #212121
+        margin-top: 30px
+        padding: 0 15px
+        line-height: 55px
+        text-transform: uppercase
+        letter-spacing: 1px
+        font-size: 20px
+        height: 55px
+        align-self: center
+        border: 2px solid #000
+        transition: all 0.5s ease
